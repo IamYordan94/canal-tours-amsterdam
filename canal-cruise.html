@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Canal Cruise | Canal Tours Amsterdam</title>
+  <meta name="description" content="Amsterdam canal cruises — see the Skinny Bridge, Golden Bend, Anne Frank House and 17th-century canal houses from the water." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,300;0,400;0,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="site-bg" id="siteBg" style="background-image:url('img/scenic-1.jpg')"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <span class="loader__word">CANAL&nbsp;TOURS</span>
+      <div class="loader__bar"><span id="loaderBar"></span></div>
+    </div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="index.html">
+      <img class="nav__mark" src="img/logo-serpent.webp" alt="Canal Tours Amsterdam — crowned sea serpent" />
+      <span class="nav__word">Canal Tours<br />Amsterdam</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="canal-cruise.html" class="is-current">Canal Cruise</a>
+      <a href="open-boat-tours.html">Open Boat Tours</a>
+      <a href="index.html#why">Why us</a>
+      <a href="index.html#events">Events</a>
+    </nav>
+    <a class="nav__cta" href="https://canaltours.amsterdam/all-products">Book now</a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <div class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="canal-cruise.html">Canal Cruise</a>
+    <a href="open-boat-tours.html">Open Boat Tours</a>
+    <a href="index.html#why">Why us</a>
+    <a href="index.html#events">Events</a>
+    <a href="https://canaltours.amsterdam/all-products">Book now</a>
+    <div class="menu__foot">info@canaltours.amsterdam · +31 20 217 0501</div>
+  </div>
+
+  <div class="scroll-container" data-scroll-container>
+    <main id="top">
+
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="hero__stage" id="heroStage">
+          <div class="hero__scene" data-scene="0"><img src="img/best-of-amsterdam.jpg" alt="Best of Amsterdam Canal Cruise" /></div>
+          <div class="hero__scene" data-scene="1"><img src="img/scenic-3.jpg" alt="Skinny Bridge, Amsterdam" /></div>
+          <div class="hero__scene" data-scene="2"><img src="img/scenic-1.jpg" alt="Amsterdam canals" /></div>
+          <div class="hero__scrim" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero__content" id="heroContent">
+          <p class="hero__eyebrow" data-4d="30">
+            <span class="dot"></span> Amsterdam &middot; Canal Cruise
+          </p>
+          <h1 class="hero__title" data-4d="18">
+            <span class="line" data-split>Canal</span>
+            <span class="line line--italic" data-split>Cruise</span>
+          </h1>
+          <p class="hero__sub" data-4d="10">
+            Discover Amsterdam's charm with an unforgettable canal boat tour. There's no better
+            way to explore the Dutch capital than by water.
+          </p>
+          <div class="hero__cta" data-4d="14">
+            <a class="btn btn--solid" href="https://canaltours.amsterdam/canal-cruise/best-of-amsterdam-canal-cruise">Book now</a>
+            <a class="btn btn--ghost" href="#products" data-scroll-to>See tours</a>
+          </div>
+          <div class="hero__stats" data-4d="20">
+            <div class="hero__stat"><b>4,9</b><span>Rating</span></div>
+            <div class="hero__stat"><b>Every 30 min</b><span>Frequent departure</span></div>
+            <div class="hero__stat"><b>€15.50</b><span>Starting</span></div>
+          </div>
+        </div>
+
+        <div class="hero__scroll" data-4d="24" aria-hidden="true">
+          <span>Scroll</span>
+          <span class="hero__scroll-line"></span>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="features section" id="features">
+        <div class="feature reveal" data-scroll data-scroll-speed="1">
+          <div class="feature__num">01</div>
+          <h3>Discover Amsterdam's charm</h3>
+          <p>There's no better way to explore the Dutch capital than by water. Our Amsterdam canal tours offer a relaxing, scenic way to see the city's famous sights. Imagine gliding through the historic canals, listening to stories and fun facts shared by your guide — either through headphones or in person. A peaceful and immersive experience that's perfect for travellers of all ages.</p>
+        </div>
+        <div class="feature reveal" data-scroll data-scroll-speed="-1">
+          <div class="feature__num">02</div>
+          <h3>Sail past the city's top highlights</h3>
+          <p>From the Skinny Bridge and the Golden Bend to the Anne Frank House and the famous 17th-century canal houses — our Amsterdam canal tours are designed to give you the perfect overview of the city's rich history and charm.</p>
+        </div>
+        <div class="feature reveal" data-scroll data-scroll-speed="1.5">
+          <div class="feature__num">03</div>
+          <h3>Day cruises &amp; magical evenings</h3>
+          <p>Our canal cruises run throughout the day, so you can explore in broad daylight or choose a magical evening cruise. As dusk falls, the water reflects the warm lights of bridges and buildings, creating a calm and romantic atmosphere.</p>
+        </div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section class="products section" id="products">
+        <div class="cats__head" style="grid-column:1/-1;">
+          <p class="label reveal">Our canal cruises</p>
+          <h2 class="cats__title reveal">Choose your<br />canal cruise</h2>
+        </div>
+
+        <article class="card reveal" data-scroll data-scroll-speed="1" style="grid-column: 2 / span 5;">
+          <a class="card__media" href="https://canaltours.amsterdam/canal-cruise/best-of-amsterdam-canal-cruise">
+            <img src="img/best-of-amsterdam.jpg" alt="Best of Amsterdam Canal Cruise" />
+          </a>
+          <div class="card__body">
+            <span class="card__tag">Classic</span>
+            <h3 class="card__title">Best of Amsterdam<br />Canal Cruise</h3>
+            <p class="card__desc">Explore Amsterdam's Canals with the Best Canal Cruise — see the best Amsterdam has to offer on this 1-hour cruise.</p>
+            <div class="card__foot">
+              <span class="card__price">Starting €15.50</span>
+              <a class="card__link" href="https://canaltours.amsterdam/canal-cruise/best-of-amsterdam-canal-cruise">Book now &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal" data-scroll data-scroll-speed="-1" style="grid-column: 7 / span 5;">
+          <a class="card__media" href="https://canaltours.amsterdam/all-products">
+            <img src="img/vr-cruise.jpg" alt="Amsterdam VR Time-Travel Canal Cruise into the Golden Age" />
+          </a>
+          <div class="card__body">
+            <span class="card__tag">VR experience</span>
+            <h3 class="card__title">Amsterdam VR Time-Travel<br />Canal Cruise</h3>
+            <p class="card__desc">Travel back in time to the 17th century while sailing through Amsterdam — a special combination of canal cruise and historical virtual reality experience.</p>
+            <div class="card__foot">
+              <span class="card__price">Starting €39.00</span>
+              <a class="card__link" href="https://canaltours.amsterdam/all-products">Book now &rarr;</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- DEPARTURE LOCATIONS -->
+      <section class="section" id="departures">
+        <p class="label reveal">Departure locations</p>
+        <h2 class="events__title">
+          <span class="line" data-split>Departures from</span>
+          <span class="line line--italic" data-split>three piers</span>
+        </h2>
+        <div class="departures">
+          <div class="departure reveal" data-scroll data-scroll-speed="1">
+            <div class="departure__dot"></div>
+            <h3>Central Station</h3>
+            <p class="departure__addr">Prins Hendrikkade 37, Amsterdam</p>
+            <span class="departure__note">60 min tours</span>
+          </div>
+          <div class="departure reveal" data-scroll data-scroll-speed="-1">
+            <div class="departure__dot"></div>
+            <h3>Damrak</h3>
+            <p class="departure__addr">Damrak pier 5-6, Amsterdam</p>
+            <span class="departure__note">60 min tours</span>
+          </div>
+          <div class="departure reveal" data-scroll data-scroll-speed="1.5">
+            <div class="departure__dot"></div>
+            <h3>Rijksmuseum</h3>
+            <p class="departure__addr">Stadhouderskade 520, Amsterdam</p>
+            <span class="departure__note">75 min tours</span>
+          </div>
+        </div>
+        <p class="intro__text reveal" style="margin-top:32px;">
+          <a href="https://canaltours.amsterdam/all-products" style="color:var(--accent);">Check out all our departure addresses &rarr;</a>
+        </p>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="img/logo-serpent.webp" alt="Canal Tours Amsterdam" class="footer__logo" />
+          <span class="footer__word">Canal Tours Amsterdam</span>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <span class="footer__contact">
+              <a href="mailto:info@canaltours.amsterdam">info@canaltours.amsterdam</a><br />
+              <a href="tel:+31202170501">+31 20 217 0501</a><br />
+              Monday to Friday 09.00 to 17.00
+            </span>
+            <div class="footer__rating"><span class="stars">★★★★★</span> 4,9 Tripadvisor</div>
+            <div class="footer__social">
+              <a href="https://www.facebook.com/canaltoursamsterdam/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+              <a href="https://www.instagram.com/canaltours.amsterdam/" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+              <a href="https://www.youtube.com/@canaltours.amsterdam" target="_blank" rel="noopener" aria-label="YouTube">yt</a>
+              <a href="https://www.tiktok.com/@canaltours.amsterdam" target="_blank" rel="noopener" aria-label="TikTok">tk</a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>Company</h4>
+            <a href="https://canaltours.amsterdam/about-canal-tours-amsterdam">About Canal Tours Amsterdam</a>
+            <a href="https://canaltours.amsterdam/frequently-asked-questions">Frequently Asked Questions</a>
+            <a href="https://canaltours.amsterdam/customer-service">Customer Service</a>
+            <a href="https://canaltours.amsterdam/privacy-cookies-and-security">Privacy, Cookies &amp; Security</a>
+            <a href="https://canaltours.amsterdam/terms-and-conditions">Terms And Conditions</a>
+          </div>
+          <div class="footer__col">
+            <h4>Tours</h4>
+            <a href="canal-cruise.html">Canal Cruise</a>
+            <a href="https://canaltours.amsterdam/canal-cruise/best-of-amsterdam-canal-cruise">Best of Amsterdam Canal Cruise</a>
+            <a href="open-boat-tours.html">Open Boat Tours</a>
+            <a href="https://canaltours.amsterdam/drinks-and-dinner-cruises/pizza-dinner-cruise-amsterdam">Drinks &amp; Dinner Cruises</a>
+            <a href="https://canaltours.amsterdam/pedal-boat/canal-bike-amsterdam">Pedal Boat</a>
+          </div>
+          <div class="footer__col">
+            <h4>Departure locations</h4>
+            <a href="#departures" data-scroll-to>Departure Rijksmuseum</a>
+            <span class="footer__contact">Stadhouderskade 520, Amsterdam</span>
+            <a href="#departures" data-scroll-to>Departure Central Station</a>
+            <span class="footer__contact">Prins Hendrikkade 37, Amsterdam</span>
+            <a href="#departures" data-scroll-to>Departure Damrak</a>
+            <span class="footer__contact">Damrak pier 5-6, Amsterdam</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Canal Tours Amsterdam</span>
+        <span class="footer__loc">Amsterdam, NL</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
