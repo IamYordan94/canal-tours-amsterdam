@@ -6,6 +6,14 @@
   <title>Open Boat Tours | Canal Tours Amsterdam</title>
   <meta name="description" content="Open boat tours in Amsterdam — small electric boats, hidden canals, personal skippers. Departing every 30 minutes." />
 
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Canal Tours Amsterdam" />
+  <meta property="og:title" content="Open Boat Tours | Canal Tours Amsterdam" />
+  <meta property="og:description" content="Open boat tours in Amsterdam — small electric boats, hidden canals, personal skippers. Departing every 30 minutes." />
+  <meta property="og:url" content="https://iamyordan94.github.io/canal-tours-amsterdam/open-boat-tours.html" />
+  <meta property="og:image" content="https://iamyordan94.github.io/canal-tours-amsterdam/img/open-boat.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" as="image" href="img/open-boat.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,300;0,400;0,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
@@ -15,7 +23,9 @@
 </head>
 <body>
 
-  <div class="site-bg" id="siteBg" style="background-image:url('img/open-boat-drinks-2.jpg')"></div>
+  <div class="site-bg" id="siteBg">
+    <div class="site-bg__layer is-active" style="background-image:url('img/open-boat-drinks-2.jpg')"></div>
+  </div>
 
   <div class="loader" id="loader">
     <div class="loader__inner">
@@ -58,8 +68,6 @@
       <section class="hero" id="hero">
         <div class="hero__stage" id="heroStage">
           <div class="hero__scene" data-scene="0"><img src="img/open-boat.jpg" alt="Open boat tour Amsterdam" /></div>
-          <div class="hero__scene" data-scene="1"><img src="img/open-boat-drinks.jpg" alt="Open boat with drinks" /></div>
-          <div class="hero__scene" data-scene="2"><img src="img/scenic-2.jpg" alt="Amsterdam canals" /></div>
           <div class="hero__scrim" aria-hidden="true"></div>
         </div>
 
@@ -120,7 +128,7 @@
 
         <article class="card reveal" data-scroll data-scroll-speed="1" style="grid-column: 2 / span 5;">
           <a class="card__media" href="https://canaltours.amsterdam/open-boat-tours/open-boat-tours-amsterdam">
-            <img src="img/open-boat.jpg" alt="Open Boat Tour Amsterdam" />
+            <img loading="lazy" decoding="async" src="img/open-boat.jpg" alt="Open Boat Tour Amsterdam" />
           </a>
           <div class="card__body">
             <span class="card__tag">Open boat</span>
@@ -135,7 +143,7 @@
 
         <article class="card reveal" data-scroll data-scroll-speed="-1" style="grid-column: 7 / span 5;">
           <a class="card__media" href="https://canaltours.amsterdam/open-boat-tours/open-boat-tour-amsterdam-with-drinks">
-            <img src="img/open-boat-drinks.jpg" alt="Open Boat Tour Amsterdam with Drinks" />
+            <img loading="lazy" decoding="async" src="img/open-boat-drinks.jpg" alt="Open Boat Tour Amsterdam with Drinks" />
           </a>
           <div class="card__body">
             <span class="card__tag">With drinks</span>
@@ -187,7 +195,7 @@
     <footer class="footer">
       <div class="footer__top">
         <div class="footer__brand">
-          <img src="img/logo-serpent.webp" alt="Canal Tours Amsterdam" class="footer__logo" />
+          <img loading="lazy" decoding="async" src="img/logo-serpent.webp" alt="Canal Tours Amsterdam" class="footer__logo" />
           <span class="footer__word">Canal Tours Amsterdam</span>
         </div>
         <div class="footer__cols">
@@ -239,6 +247,8 @@
       </div>
     </footer>
   </div>
+
+  <a class="bookbar" href="https://canaltours.amsterdam/all-products">Book now <span>&rarr;</span></a>
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>

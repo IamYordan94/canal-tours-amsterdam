@@ -104,6 +104,46 @@
     bgTarget = p * 3.5; // rotate up to 3.5deg over full page
   }
 
+  /* ---------- 3c. BACKGROUND CROSSFADE (fade site-bg between product photos) ---------- */
+  var bgDefault = null;
+  var bgProducts = [];
+
+  function setupBgCrossfade() {
+    if (!siteBg) return;
+    bgDefault = siteBg.querySelector('.site-bg__layer.is-active') || siteBg.querySelector('.site-bg__layer');
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+    cards.forEach(function (card) {
+      var img = card.querySelector('.card__media img');
+      if (!img || !img.getAttribute('src')) return;
+      var layer = document.createElement('div');
+      layer.className = 'site-bg__layer';
+      layer.style.backgroundImage = 'url(' + img.getAttribute('src') + ')';
+      siteBg.appendChild(layer);
+      bgProducts.push({ card: card, layer: layer });
+    });
+  }
+
+  function updateBgCrossfade() {
+    if (!bgProducts.length) return;
+    var vh = window.innerHeight || 1;
+    var active = bgDefault;
+    var best = vh * 0.45;
+    bgProducts.forEach(function (entry) {
+      var rect = entry.card.getBoundingClientRect();
+      var cy = rect.top + rect.height / 2;
+      var dist = Math.abs(cy - vh / 2);
+      if (dist < best) {
+        best = dist;
+        active = entry.layer;
+      }
+    });
+    var layers = [bgDefault];
+    bgProducts.forEach(function (e) { layers.push(e.layer); });
+    layers.forEach(function (l) {
+      if (l) l.classList.toggle('is-active', l === active);
+    });
+  }
+
   /* ---------- 4. 4D MOUSE PARALLAX ---------- */
   var mx = 0, my = 0;        // target (-1..1)
   var cx = 0, cy = 0;        // current (lerped)
@@ -156,6 +196,7 @@
     locoScroll.on('scroll', function (args) {
       updateCrossfade(args.scroll.y);
       updateSiteBg(args.scroll.y);
+      updateBgCrossfade();
       if (nav) nav.classList.toggle('is-solid', args.scroll.y > 40);
     });
 
@@ -176,6 +217,7 @@
       var y = window.scrollY || window.pageYOffset;
       updateCrossfade(y);
       updateSiteBg(y);
+      updateBgCrossfade();
       if (nav) nav.classList.toggle('is-solid', y > 40);
     }, { passive: true });
   }
@@ -220,6 +262,8 @@
   /* ---------- 8. BOOT ---------- */
   function boot() {
     observeReveals();
+    setupBgCrossfade();
+    updateBgCrossfade();
 
     // hero title reveals as the loader lifts
     setTimeout(function () {

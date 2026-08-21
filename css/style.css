@@ -920,3 +920,44 @@ h1, h2, h3 {
   .trust__row { animation: none; }
   .site-bg { transform: none !important; }
 }
+
+/* ============ BACKGROUND CROSSFADE LAYERS ============ */
+.site-bg__layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.9s var(--ease-out);
+  will-change: opacity;
+}
+.site-bg__layer.is-active { opacity: 1; }
+
+/* ============ STICKY MOBILE BOOK BAR ============ */
+.bookbar { display: none; }
+@media (max-width: 860px) {
+  .bookbar {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 20px calc(16px + env(safe-area-inset-bottom, 0px));
+    background: var(--accent);
+    color: #fff;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+    box-shadow: 0 -8px 28px rgba(0,0,0,0.28);
+    transition: background 0.3s;
+  }
+  .bookbar:active { background: var(--accent-2); }
+  .footer { padding-bottom: 84px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-bg__layer { transition: none; }
+}

@@ -6,6 +6,14 @@
   <title>Canal Tours Amsterdam — Book Your Amsterdam Canal Cruise</title>
   <meta name="description" content="Discover Amsterdam with the #1 canal company. Scenic cruises, open boats, dinner cruises, pedal boats. Departing every 30 minutes." />
 
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Canal Tours Amsterdam" />
+  <meta property="og:title" content="Canal Tours Amsterdam — Book Your Amsterdam Canal Cruise" />
+  <meta property="og:description" content="Discover Amsterdam with the #1 canal company. Scenic cruises, open boats, dinner cruises, pedal boats. Departing every 30 minutes." />
+  <meta property="og:url" content="https://iamyordan94.github.io/canal-tours-amsterdam/" />
+  <meta property="og:image" content="https://iamyordan94.github.io/canal-tours-amsterdam/img/hero-1.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" as="image" href="img/hero-1.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,300;0,400;0,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
@@ -16,7 +24,9 @@
 <body>
 
   <!-- Fixed photo background (rotates on scroll) -->
-  <div class="site-bg" id="siteBg" style="background-image:url('img/scenic-3.jpg')"></div>
+  <div class="site-bg" id="siteBg">
+    <div class="site-bg__layer is-active" style="background-image:url('img/scenic-3.jpg')"></div>
+  </div>
 
   <div class="loader" id="loader">
     <div class="loader__inner">
@@ -60,13 +70,6 @@
       <section class="hero" id="hero">
         <div class="hero__stage" id="heroStage">
           <div class="hero__scene" data-scene="0"><img src="img/hero-1.webp" alt="Amsterdam canal" /></div>
-          <div class="hero__scene" data-scene="1"><img src="img/scenic-1.jpg" alt="Amsterdam canal houses" /></div>
-          <div class="hero__scene" data-scene="2"><img src="img/hero-2.jpg" alt="Amsterdam canal houses" /></div>
-          <div class="hero__scene" data-scene="3"><img src="img/aperol.jpg" alt="Aperol cruise on the canals" /></div>
-          <div class="hero__scene" data-scene="4"><img src="img/hero-3.jpg" alt="Canal boats" /></div>
-          <div class="hero__scene" data-scene="5"><img src="img/open-boat-drinks.jpg" alt="Open boat tour with drinks" /></div>
-          <div class="hero__scene" data-scene="6"><img src="img/scenic-2.jpg" alt="Amsterdam canal at golden hour" /></div>
-          <div class="hero__scene" data-scene="7"><img src="img/hero-4.jpg" alt="Amsterdam evening" /></div>
           <div class="hero__scrim" aria-hidden="true"></div>
         </div>
 
@@ -99,7 +102,6 @@
           <span class="hero__scroll-line"></span>
         </div>
 
-        <div class="hero__counter" id="heroCounter" aria-hidden="true">01&nbsp;/&nbsp;08</div>
       </section>
 
       <!-- TRUST MARQUEE -->
@@ -142,7 +144,7 @@
 
         <article class="card reveal" data-scroll data-scroll-speed="1">
           <a class="card__media" href="https://canaltours.amsterdam/canal-cruise/best-of-amsterdam-canal-cruise">
-            <img src="img/best-of-amsterdam.jpg" alt="Best of Amsterdam Canal Cruise" />
+            <img loading="lazy" decoding="async" src="img/best-of-amsterdam.jpg" alt="Best of Amsterdam Canal Cruise" />
           </a>
           <div class="card__body">
             <span class="card__tag">Classic</span>
@@ -157,7 +159,7 @@
 
         <article class="card reveal" data-scroll data-scroll-speed="-1">
           <a class="card__media" href="https://canaltours.amsterdam/drinks-and-dinner-cruises/pizza-dinner-cruise-amsterdam">
-            <img src="img/pizza-dinner.jpg" alt="Pizza Dinner Cruise" />
+            <img loading="lazy" decoding="async" src="img/pizza-dinner.jpg" alt="Pizza Dinner Cruise" />
           </a>
           <div class="card__body">
             <span class="card__tag">Dinner</span>
@@ -172,7 +174,7 @@
 
         <article class="card reveal" data-scroll data-scroll-speed="1.5">
           <a class="card__media" href="https://canaltours.amsterdam/pedal-boat/canal-bike-amsterdam">
-            <img src="img/canal-bike.jpg" alt="Canal Bike Amsterdam" />
+            <img loading="lazy" decoding="async" src="img/canal-bike.jpg" alt="Canal Bike Amsterdam" />
           </a>
           <div class="card__body">
             <span class="card__tag">Pedal boat</span>
@@ -187,7 +189,7 @@
 
         <article class="card reveal" data-scroll data-scroll-speed="-1">
           <a class="card__media" href="https://canaltours.amsterdam/open-boat-tours/open-boat-tours-amsterdam">
-            <img src="img/open-boat.jpg" alt="Open Boat Tour Amsterdam" />
+            <img loading="lazy" decoding="async" src="img/open-boat.jpg" alt="Open Boat Tour Amsterdam" />
           </a>
           <div class="card__body">
             <span class="card__tag">Open boat</span>
@@ -202,7 +204,7 @@
 
         <article class="card reveal" data-scroll data-scroll-speed="1">
           <a class="card__media" href="https://canaltours.amsterdam/drinks-and-dinner-cruises/cheese-and-wine-cruise">
-            <img src="img/cheese-wine.jpg" alt="Cheese and Wine Cruise Amsterdam" />
+            <img loading="lazy" decoding="async" src="img/cheese-wine.jpg" alt="Cheese and Wine Cruise Amsterdam" />
           </a>
           <div class="card__body">
             <span class="card__tag">Evening</span>
@@ -217,7 +219,7 @@
 
         <article class="card reveal" data-scroll data-scroll-speed="-1">
           <a class="card__media" href="https://canaltours.amsterdam/drinks-and-dinner-cruises/cocktail-cruise-amsterdam">
-            <img src="img/cocktail.jpg" alt="Cocktail Cruise Amsterdam" />
+            <img loading="lazy" decoding="async" src="img/cocktail.jpg" alt="Cocktail Cruise Amsterdam" />
           </a>
           <div class="card__body">
             <span class="card__tag">Evening</span>
@@ -232,7 +234,7 @@
 
         <article class="card reveal" data-scroll data-scroll-speed="1">
           <a class="card__media" href="https://canaltours.amsterdam/drinks-and-dinner-cruises/aperol-spritz-cruise-amsterdam">
-            <img src="img/aperol.jpg" alt="Aperol Spritz Cruise Amsterdam" />
+            <img loading="lazy" decoding="async" src="img/aperol.jpg" alt="Aperol Spritz Cruise Amsterdam" />
           </a>
           <div class="card__body">
             <span class="card__tag">Drinks</span>
@@ -255,27 +257,27 @@
         </div>
         <div class="cats__grid">
           <a class="cat reveal" data-scroll data-scroll-speed="1" href="https://canaltours.amsterdam/en/drinks-and-dinner-cruises">
-            <span class="cat__img"><img src="img/cat-dinner.png" alt="Drinks and Dinner Cruises" /></span>
+            <span class="cat__img"><img loading="lazy" decoding="async" src="img/cat-dinner.png" alt="Drinks and Dinner Cruises" /></span>
             <span class="cat__name">Drinks &amp; Dinner Cruises</span>
             <span class="cat__go">View products &rarr;</span>
           </a>
           <a class="cat reveal" data-scroll data-scroll-speed="-1" href="canal-cruise.html">
-            <span class="cat__img"><img src="img/cat-cruise.png" alt="Canal Cruise" /></span>
+            <span class="cat__img"><img loading="lazy" decoding="async" src="img/cat-cruise.png" alt="Canal Cruise" /></span>
             <span class="cat__name">Canal Cruise</span>
             <span class="cat__go">View products &rarr;</span>
           </a>
           <a class="cat reveal" data-scroll data-scroll-speed="1.5" href="https://canaltours.amsterdam/en/amsterdam-light-festival">
-            <span class="cat__img"><img src="img/cat-light.png" alt="Amsterdam Light Festival" /></span>
+            <span class="cat__img"><img loading="lazy" decoding="async" src="img/cat-light.png" alt="Amsterdam Light Festival" /></span>
             <span class="cat__name">Light Festival</span>
             <span class="cat__go">View products &rarr;</span>
           </a>
           <a class="cat reveal" data-scroll data-scroll-speed="-1" href="open-boat-tours.html">
-            <span class="cat__img"><img src="img/cat-openboat.png" alt="Open Boat Tours" /></span>
+            <span class="cat__img"><img loading="lazy" decoding="async" src="img/cat-openboat.png" alt="Open Boat Tours" /></span>
             <span class="cat__name">Open Boat Tours</span>
             <span class="cat__go">View products &rarr;</span>
           </a>
           <a class="cat reveal" data-scroll data-scroll-speed="1" href="https://canaltours.amsterdam/en/pedal-boat">
-            <span class="cat__img"><img src="img/cat-pedal.png" alt="Pedal Boat" /></span>
+            <span class="cat__img"><img loading="lazy" decoding="async" src="img/cat-pedal.png" alt="Pedal Boat" /></span>
             <span class="cat__name">Pedal Boat</span>
             <span class="cat__go">View products &rarr;</span>
           </a>
@@ -286,7 +288,7 @@
       <section class="why section" id="why">
         <div class="why__media" data-scroll data-scroll-speed="1">
           <div class="why__img reveal">
-            <img src="img/hero-2.jpg" alt="Why book your Amsterdam canal cruise" />
+            <img loading="lazy" decoding="async" src="img/hero-2.jpg" alt="Why book your Amsterdam canal cruise" />
           </div>
           <div class="why__stat" data-scroll data-scroll-speed="-1.5">
             <span class="why__stat-num">50</span>
@@ -357,7 +359,7 @@
       <section class="fleet section">
         <div class="fleet__media" data-scroll data-scroll-speed="1">
           <a class="fleet__video reveal" href="https://www.youtube.com/@canaltours.amsterdam" target="_blank" rel="noopener">
-            <img src="img/hero-3.jpg" alt="Watch our video" />
+            <img loading="lazy" decoding="async" src="img/hero-3.jpg" alt="Watch our video" />
             <span class="fleet__play" aria-hidden="true">▶</span>
             <span class="fleet__watch">Watch our video</span>
           </a>
@@ -418,7 +420,7 @@
     <footer class="footer">
       <div class="footer__top">
         <div class="footer__brand">
-          <img src="img/logo-serpent.webp" alt="Canal Tours Amsterdam" class="footer__logo" />
+          <img loading="lazy" decoding="async" src="img/logo-serpent.webp" alt="Canal Tours Amsterdam" class="footer__logo" />
           <span class="footer__word">Canal Tours Amsterdam</span>
         </div>
         <div class="footer__cols">
@@ -470,6 +472,8 @@
       </div>
     </footer>
   </div>
+
+  <a class="bookbar" href="https://canaltours.amsterdam/all-products">Book now <span>&rarr;</span></a>
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
