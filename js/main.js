@@ -60,8 +60,8 @@
     crossfadeLength = n - 1;
     for (var i = 0; i < n - 1; i++) {
       crossfade
-        .to(scenes[i], { opacity: 0, duration: d, ease: 'none' }, i)
-        .fromTo(scenes[i + 1], { opacity: 0 }, { opacity: 1, duration: d, ease: 'none' }, i);
+        .to(scenes[i], { opacity: 0, scale: 1.05, duration: d, ease: 'none' }, i)
+        .fromTo(scenes[i + 1], { opacity: 0, scale: 1 }, { opacity: 1, scale: 1.04, duration: d, ease: 'none' }, i);
     }
     // content lifts + fades as hero scrolls away (children carry their own 4D transforms)
     crossfade.to(heroContent, {
@@ -71,12 +71,13 @@
 
   function updateCrossfade(scrollY) {
     if (!crossfade) return;
-    var range = Math.max(window.innerHeight * 1.15, 700);
+    var range = Math.max(window.innerHeight * 1.35, 800);
     var p = Math.min(Math.max(scrollY / range, 0), 1);
     crossfade.progress(p);
     if (heroCounter) {
-      var idx = Math.min(Math.floor(p * crossfadeLength) + 1, 4);
-      heroCounter.innerHTML = '0' + idx + '&nbsp;/&nbsp;04';
+      var total = scenes.length;
+      var idx = Math.min(Math.floor(p * crossfadeLength) + 1, total);
+      heroCounter.innerHTML = (idx < 10 ? '0' + idx : idx) + '&nbsp;/&nbsp;' + (total < 10 ? '0' + total : total);
     }
   }
 
